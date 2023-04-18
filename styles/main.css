@@ -1,0 +1,76 @@
+@import './constants.css';
+
+html {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: var(--clr-primary-400);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-link {
+    box-sizing: border-box;
+    max-height: 66px;
+}
+
+#home-link:hover {
+    border-bottom: 4px solid var(--clr-home-border);
+}
+
+#menu-link:hover {
+    border-bottom: 4px solid var(--clr-menu-border);
+}
+
+#login-link:hover {
+    border-bottom: 4px solid var(--clr-login-border);
+}
+
+#gallery-link:hover {
+    border-bottom: 4px solid var(--clr-gallery-border);
+}
+
+.nav-link:active {
+    background-color: var(--clr-primary-900);
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.lorem {
+    padding-top: 80px;
+}
+
+.nav-list>li {
+    list-style-type: none;
+}
+
+/* Navbar links */
+.nav-list>li>a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
