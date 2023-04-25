@@ -4,20 +4,13 @@ html {
     height: 100%;
 }
 
-
-/* background: #f68f8f;
-background: -moz-linear-gradient(left, #f68f8f 0%, #f6e08f 33%, #96f68f 66%, #de8ff6 100%);
-background: -webkit-linear-gradient(left, #f68f8f 0%, #f6e08f 33%, #96f68f 66%, #de8ff6 100%);
-background: linear-gradient(to right, #f68f8f 0%, #f6e08f 33%, #96f68f 66%, #de8ff6 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f68f8f', endColorstr='#de8ff6', GradientType=1); */
-
 body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background: rgb(255, 235, 244);
+    background: rgb(231, 231, 231);
     /* background: radial-gradient(circle, rgba(255, 235, 244, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-    background: rgb(46, 46, 46);
+    /* background: rgb(46, 46, 46); */
 }
 
 input {
@@ -44,11 +37,31 @@ input {
     min-width: 250px;
     background-color: #fff;
     border-radius: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding: 14px;
+    /* padding: 0px 14px 14px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.login-upper-stripe{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        var(--clr-home-border) 25%,
+        var(--clr-menu-border)  25% 50%,
+        var(--clr-login-border) 50% 75%,
+        var(--clr-gallery-border)  75% 100%
+      );
+}
+
+.login-form {
+    padding: 0 20px;
 }
 
 .login-text {
@@ -58,9 +71,8 @@ input {
 .form-button {
     cursor: pointer;
     font-weight: bold;
-    background: rgb(255, 235, 244);
     /* background: radial-gradient(circle, rgba(255, 235, 244, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-    background: #296674;
+    background: #71c0d1;
 }
 
 .login-form input[type="submit"]:hover {
@@ -69,7 +81,7 @@ input {
 
 .login-form input[type="text"]:focus,
 .login-form input[type="password"]:focus {
-    outline: 2px #296674 solid;
+    outline: 2px #71c0d1 solid;
 }
 
 .login-form input[type="text"],
